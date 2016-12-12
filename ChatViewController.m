@@ -39,6 +39,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    testing
     
     
 }
@@ -51,7 +52,7 @@
     
     [[EMClient sharedClient].chatManager sendMessage:message progress:nil completion:^(EMMessage *message, EMError *error) {
         if (!error) {
-            NSLog(@"succeed");
+            
         }
         
     }];
@@ -60,7 +61,7 @@
 
 -(void)messagesDidReceive:(NSArray *)aMessages
 {
-    NSLog(@"接受消息%ld 条",aMessages.count);
+    NSLog(@"fghfghfgh 条",aMessages.count);
 
 
 }
